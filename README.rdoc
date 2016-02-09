@@ -37,4 +37,4 @@ least two tests per action. (25%)
 To submit the quiz, have the project hosted on Github and submit the link on
 Certified.in.
 
-![Alt text](/Documents/Code_Core/quiz/quiz_2_day_20/supporter/img.png?raw=true "quiz")
+![Alt tag](/Documents/Code_Core/quiz/quiz_2_day_20/supporter/img.png?raw=true "quiz")
