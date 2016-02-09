@@ -1,0 +1,52 @@
+<% if @request.errors.any? %>
+<h3>The following errors prevented your request from being submitted:</h3>
+<ul>
+  <% @request.errors.full_messages.each do |msg| %>
+  <li><%= msg %></li>
+  <% end %>
+</ul>
+<% end %>
+
+<%= form_for @request do |f| %>
+
+<div>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+</div>
+<div>
+  <br>
+</div>
+<div>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <br>
+</div>
+  <br>
+<div>
+</div>
+<div>
+  <label for="department">Department</label><br>
+  <input id="department_id_1" name="department" value "1" type="radio">
+  <label for="department_id_1">Sales</label>
+  <input id="department_id_2" name="department" value "2" type="radio">
+  <label for="department_id_2">Marketing</label>
+  <input id="department_id_3" name="department" value "3" type="radio">
+  <label for="department_id_3">Technical</label>
+</div>
+<br>
+<div>
+  <%= f.label :message %><br>
+  <%= f.text_area :message %>
+</div>
+<div>
+  <br>
+</div>
+<div>
+  <%= f.submit "SAVE" %>
+</div>
+
+
+  <% end %>
+
+  <%= link_to "Back to submissions", requests_path %>

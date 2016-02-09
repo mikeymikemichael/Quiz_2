@@ -1,0 +1,21 @@
+<h1>Showing selected request</h1>
+
+<p>
+  Name: <%= @request.name %>
+</p>
+
+<p>
+  Email: <%= @request.email %>
+</p>
+
+<p>
+  Department: <%= @request.department %>
+</p>
+
+<p>
+  Message: <%= @request.message %>
+</p>
+
+<%= link_to "Edit this submission", edit_request_path(@request) %>
+|
+<%= link_to "Back to submissions", requests_path %>
